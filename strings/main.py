@@ -44,14 +44,6 @@ def func_five(string1, string2):
 
         return new_str1 + ' ' + new_str2
 
-def func_six(string):
-
-    if len(string) < 3:
-        return string
-    if string.endswith('ing'):
-        return string + 'ly'
-    return string + 'ing'
-
 def func_six(words_list):
     longest = max(words_list, key=len)
     return longest, len(longest)
