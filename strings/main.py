@@ -52,11 +52,9 @@ def func_six(string):
         return string + 'ly'
     return string + 'ing'
 
-def find_six(words_list):
+def func_six(words_list):
     longest = max(words_list, key=len)
     return longest, len(longest)
-
-
 
 def func_seven(string):
     if len(string) > 1:
