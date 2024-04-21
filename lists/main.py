@@ -1,5 +1,7 @@
 def func_first(items):
     return sum(items)
+
+
 # print(func_first([1, 2, 3]))
 
 def func_second(items):
@@ -7,14 +9,19 @@ def func_second(items):
     for i in items:
         result *= i
     return result
+
+
 # print(func_second([1, 2, 3, 4]))
 
 def func_third(items):
     return max(items)
+
+
 # print(func_third([1, 2, 3]))
 
 def func_fourth(items):
     return min(items)
+
 
 def func_fifth(items):
     count = 0
@@ -25,6 +32,7 @@ def func_fifth(items):
 
     return count
 
+
 def func_sixth(list1, list2):
     new_arr = []
 
@@ -33,14 +41,18 @@ def func_sixth(list1, list2):
 
     return new_arr
 
+
 def func_seventh(items):
     return list(set(items))
+
 
 def func_eighth(items):
     return len(items) > 0
 
+
 def func_ninth(items):
     return items.copy()
+
 
 def func_tenth(n, items):
     longer_words = []
@@ -50,6 +62,7 @@ def func_tenth(n, items):
             longer_words.append(item)
 
     return longer_words
+
 
 def func_eleventh(list1, list2):
     hasCommonChar = False
@@ -61,6 +74,7 @@ def func_eleventh(list1, list2):
 
     return hasCommonChar
 
+
 def func_twelfth(list):
     new_arr = []
 
@@ -69,6 +83,7 @@ def func_twelfth(list):
             new_arr.append(i)
 
     return new_arr
+
 
 def func_thirteenth(list):
     if len(list) < 2:
@@ -79,6 +94,7 @@ def func_thirteenth(list):
 
     return sorted_list[1]
 
+
 def func_fourteenth(list):
     filtered_list = []
 
@@ -88,6 +104,7 @@ def func_fourteenth(list):
 
     return filtered_list
 
+
 def func_fifteenth(list):
     if len(list) < 2:
         print('At lest 2 elements list')
@@ -96,6 +113,7 @@ def func_fifteenth(list):
     sorted_list = sorted(list)
 
     return sorted_list[-2]
+
 
 def func_sixteenth(list):
     frequency = {}
@@ -108,6 +126,7 @@ def func_sixteenth(list):
 
     return frequency
 
+
 def func_seventeenth(list):
     result = ""
 
@@ -115,6 +134,7 @@ def func_seventeenth(list):
         result += str(i)
 
     return result
+
 
 def func_eighteenth(list):
     filtered_arr = []
@@ -124,6 +144,7 @@ def func_eighteenth(list):
             filtered_arr.append(i)
 
     return filtered_arr
+
 
 def func_nineteenth(symbol, list):
     if len(list) < 1:
@@ -137,6 +158,7 @@ def func_nineteenth(symbol, list):
         modified_arr.append(item)
 
     return modified_arr
+
 
 def func_twentieth(list1, list2):
     new_arr = []

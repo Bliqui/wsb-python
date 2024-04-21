@@ -12,12 +12,15 @@ def func_second(dicts_arr):
 
     return merged_dicts
 
+
 def func_third(dictionary, key):
     return key in dictionary
+
 
 def func_fourth(dictionary):
     for key, value in dictionary.items():
         print(key, value)
+
 
 def func_fifth(n):
     result = {}
@@ -27,6 +30,7 @@ def func_fifth(n):
 
     return result
 
+
 def func_sixth(n):
     result = {}
 
@@ -35,6 +39,7 @@ def func_sixth(n):
 
     return result
 
+
 def func_seventh(dictionary1, dictionary2):
     merged = {}
 
@@ -42,6 +47,7 @@ def func_seventh(dictionary1, dictionary2):
     merged.update(dictionary2)
 
     return merged
+
 
 # def func_eighth(d):
 #     for key, value in d.items():
@@ -59,6 +65,7 @@ def func_ninth(dictionary):
         result *= value
     return result
 
+
 def func_tenth(dictionary, key):
     if key in dictionary:
         del dictionary[key]
@@ -67,19 +74,24 @@ def func_tenth(dictionary, key):
         print('Key not found in dictionary')
         return dictionary
 
+
 def func_eleventh(keys_list, values_list):
     return dict(zip(keys_list, values_list))
 
+
 def func_twelfth(dictionary):
     return dict(sorted(dictionary.items()))
+
 
 def func_thirteenth(dictionary):
     max_value = max(dictionary.values())
     min_value = min(dictionary.values())
     return max_value, min_value
 
+
 def func_fourteenth(dictionary):
     return not bool(dictionary)
+
 
 def func_fiveteenth(d1, d2):
     result = {}
@@ -96,6 +108,7 @@ def func_fiveteenth(d1, d2):
 
     return result
 
+
 def func_sixteenth(parent_keys, nested_keys, scores):
     nested_dict = []
 
@@ -106,6 +119,7 @@ def func_sixteenth(parent_keys, nested_keys, scores):
         nested_dict.append(outer_dict)
     return nested_dict
 
+
 def func_seventeenth(dictionary, value):
     only_booleans = []
 
@@ -114,11 +128,13 @@ def func_seventeenth(dictionary, value):
 
     return all(only_booleans)
 
+
 def func_eighteenth(dictionary):
     max_key = max(dictionary, key=dictionary.get)
     min_key = min(dictionary, key=dictionary.get)
 
     return (max_key, min_key)
+
 
 def func_nineteenth(dictionary):
     return list(dictionary.values())
@@ -126,5 +142,3 @@ def func_nineteenth(dictionary):
 
 def func_twentieth(dictionary):
     return list(dictionary.keys())
-
-print(func_twentieth({'Theodore': 19, 'Roxanne': 20, 'Mathew': 21, 'Betty': 20}))
